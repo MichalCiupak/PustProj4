@@ -1,7 +1,7 @@
 U1pp = 0;
 U2pp = 0;
 U3pp = 0;
-U4pp = 0;
+U4pp = 1;
 Y1pp = 0;
 Y2pp = 0;
 Y3pp = 0;
@@ -12,7 +12,7 @@ t = (1:kk)';
 U1 = U1pp*ones(kk, 1);
 U2 = U2pp*ones(kk, 1);
 U3 = U3pp*ones(kk, 1);
-U4 = 1*ones(kk, 1);
+U4 = U4pp*ones(kk, 1);
 Y1 = Y1pp*ones(kk, 1);
 Y2 = Y2pp*ones(kk, 1);
 Y3 = Y3pp*ones(kk, 1);
@@ -37,4 +37,4 @@ legend("Y1", 'Y2', 'Y3')
 title("Symulacja obiektu");
 xlabel('Numer próbki');
 ylabel("Wartość wyjścia");
-matlab2tikz('zad2_u4.tex' , 'showInfo' , false)
+% matlab2tikz('zad2_u4.tex' , 'showInfo' , false)
